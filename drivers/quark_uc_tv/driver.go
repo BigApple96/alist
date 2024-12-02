@@ -142,8 +142,8 @@ func (d *QuarkUCTV) Link(ctx context.Context, file model.Obj, args model.LinkArg
 
 	return &model.Link{
 		URL:  fileLink.Data.DownloadURL,
-		Concurrency: 3,
-		PartSize:    4 * utils.MB,
+		Concurrency: 4,
+		PartSize:    6 * utils.MB,
 	}, nil
 }
 
